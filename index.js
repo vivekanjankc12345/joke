@@ -3,6 +3,8 @@ const axios = require('axios');
 require('dotenv').config();
 
 const app = express();
+var cors = require('cors')
+app.use(cors())
 const port = 8080;
 
 app.use(express.json());
